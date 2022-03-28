@@ -19,13 +19,6 @@ body {
   background-color: #fff;
   &.opened-menu {
     overflow: hidden;
-    .logo {
-      display: flex;
-    }
-    .header {
-      padding-top: 10px;
-      height: max-content;
-    }
   }
   @include r(600) {
     padding-top: 0 !important;

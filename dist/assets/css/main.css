@@ -14482,21 +14482,6 @@ body.opened-menu {
   overflow: hidden;
 }
 
-/* line 22, src/assets/scss/base/_base.scss */
-body.opened-menu .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-/* line 25, src/assets/scss/base/_base.scss */
-body.opened-menu .header {
-  padding-top: 10px;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-}
-
 @media only screen and (max-width: 600px) {
   /* line 18, src/assets/scss/base/_base.scss */
   body {
@@ -14504,7 +14489,7 @@ body.opened-menu .header {
   }
 }
 
-/* line 35, src/assets/scss/base/_base.scss */
+/* line 28, src/assets/scss/base/_base.scss */
 .container {
   padding: 0 30px;
 }
@@ -14515,7 +14500,7 @@ body.opened-menu .header {
  * making all elements inheriting from the root box-sizing value
  * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
  */
-/* line 59, src/assets/scss/base/_base.scss */
+/* line 52, src/assets/scss/base/_base.scss */
 *,
 *::before,
 *::after {
@@ -14523,24 +14508,24 @@ body.opened-menu .header {
           box-sizing: inherit;
 }
 
-/* line 65, src/assets/scss/base/_base.scss */
+/* line 58, src/assets/scss/base/_base.scss */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 68, src/assets/scss/base/_base.scss */
+/* line 61, src/assets/scss/base/_base.scss */
 a:hover {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 74, src/assets/scss/base/_base.scss */
+/* line 67, src/assets/scss/base/_base.scss */
 img {
   max-width: 100%;
 }
 
-/* line 78, src/assets/scss/base/_base.scss */
+/* line 71, src/assets/scss/base/_base.scss */
 .btn-reset {
   border: none;
   background-color: transparent;
@@ -14548,28 +14533,28 @@ img {
   padding: 0;
 }
 
-/* line 85, src/assets/scss/base/_base.scss */
+/* line 78, src/assets/scss/base/_base.scss */
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-/* line 87, src/assets/scss/base/_base.scss */
+/* line 80, src/assets/scss/base/_base.scss */
 .flex_h-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-/* line 90, src/assets/scss/base/_base.scss */
+/* line 83, src/assets/scss/base/_base.scss */
 .flex_w-center {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-/* line 93, src/assets/scss/base/_base.scss */
+/* line 86, src/assets/scss/base/_base.scss */
 .flex_all-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -14579,7 +14564,7 @@ img {
           justify-content: center;
 }
 
-/* line 97, src/assets/scss/base/_base.scss */
+/* line 90, src/assets/scss/base/_base.scss */
 .flex_all-sb {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -14589,29 +14574,29 @@ img {
           justify-content: space-between;
 }
 
-/* line 103, src/assets/scss/base/_base.scss */
+/* line 96, src/assets/scss/base/_base.scss */
 .reference {
   font-family: 'SourceSansPro', sans-serif;
   font-size: 13px;
   text-transform: uppercase;
 }
 
-/* line 107, src/assets/scss/base/_base.scss */
+/* line 100, src/assets/scss/base/_base.scss */
 .reference_white {
   color: #fff;
 }
 
-/* line 110, src/assets/scss/base/_base.scss */
+/* line 103, src/assets/scss/base/_base.scss */
 .reference_grey {
   color: rgba(35, 57, 69, 0.6);
 }
 
-/* line 115, src/assets/scss/base/_base.scss */
+/* line 108, src/assets/scss/base/_base.scss */
 .with-red-line {
   position: relative;
 }
 
-/* line 117, src/assets/scss/base/_base.scss */
+/* line 110, src/assets/scss/base/_base.scss */
 .with-red-line::before {
   content: '';
   position: absolute;
@@ -14915,21 +14900,14 @@ ul {
   height: 65px;
 }
 
-@media only screen and (max-width: 576px) {
-  /* line 15, src/assets/scss/layout/_header.scss */
-  .header_fixed .logo {
-    display: none;
-  }
-}
-
-/* line 20, src/assets/scss/layout/_header.scss */
+/* line 15, src/assets/scss/layout/_header.scss */
 .header__wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-/* line 23, src/assets/scss/layout/_header.scss */
+/* line 18, src/assets/scss/layout/_header.scss */
 .header__phone {
   position: relative;
   z-index: 150;
@@ -14943,20 +14921,20 @@ ul {
 }
 
 @media only screen and (max-width: 1280px) {
-  /* line 23, src/assets/scss/layout/_header.scss */
+  /* line 18, src/assets/scss/layout/_header.scss */
   .header__phone {
     font-size: 25px;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  /* line 23, src/assets/scss/layout/_header.scss */
+  /* line 18, src/assets/scss/layout/_header.scss */
   .header__phone {
-    text-align: center;
+    font-size: 20px;
   }
 }
 
-/* line 42, src/assets/scss/layout/_header.scss */
+/* line 37, src/assets/scss/layout/_header.scss */
 .logo {
   position: relative;
   z-index: 150;
@@ -14969,16 +14947,7 @@ ul {
   gap: 10px;
 }
 
-@media only screen and (max-width: 576px) {
-  /* line 42, src/assets/scss/layout/_header.scss */
-  .logo {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-/* line 51, src/assets/scss/layout/_header.scss */
+/* line 44, src/assets/scss/layout/_header.scss */
 .logo__image {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
@@ -14987,7 +14956,7 @@ ul {
   height: 55px;
 }
 
-/* line 56, src/assets/scss/layout/_header.scss */
+/* line 49, src/assets/scss/layout/_header.scss */
 .logo__caption {
   font-family: 'Manrope', sans-serif;
   font-weight: 800;
@@ -14997,9 +14966,16 @@ ul {
 }
 
 @media only screen and (max-width: 1280px) {
-  /* line 56, src/assets/scss/layout/_header.scss */
+  /* line 49, src/assets/scss/layout/_header.scss */
   .logo__caption {
     font-size: 26px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  /* line 49, src/assets/scss/layout/_header.scss */
+  .logo__caption {
+    font-size: 20px;
   }
 }
 
@@ -15132,16 +15108,7 @@ ul {
   }
 }
 
-@media only screen and (max-width: 576px) {
-  /* line 53, src/assets/scss/layout/_nav.scss */
-  .burger {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-  }
-}
-
-/* line 76, src/assets/scss/layout/_nav.scss */
+/* line 71, src/assets/scss/layout/_nav.scss */
 .burger span {
   height: 3px;
   width: 100%;
@@ -15153,24 +15120,24 @@ ul {
   transition: opacity 0.3s cubic-bezier(0, 0.55, 0.45, 1), transform 0.5s cubic-bezier(0, 0.55, 0.45, 1), -webkit-transform 0.5s cubic-bezier(0, 0.55, 0.45, 1);
 }
 
-/* line 85, src/assets/scss/layout/_nav.scss */
+/* line 80, src/assets/scss/layout/_nav.scss */
 .burger.is-active span:first-child {
   opacity: 0;
 }
 
-/* line 89, src/assets/scss/layout/_nav.scss */
+/* line 84, src/assets/scss/layout/_nav.scss */
 .burger.is-active span:nth-child(2) {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-/* line 93, src/assets/scss/layout/_nav.scss */
+/* line 88, src/assets/scss/layout/_nav.scss */
 .burger.is-active span:last-child {
   -webkit-transform: rotate(-45deg) translate(6px, -6px);
           transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* line 100, src/assets/scss/layout/_nav.scss */
+/* line 95, src/assets/scss/layout/_nav.scss */
 .mobile-nav {
   position: fixed;
   top: 0;
@@ -15190,13 +15157,13 @@ ul {
 }
 
 @media only screen and (max-width: 1024px) {
-  /* line 100, src/assets/scss/layout/_nav.scss */
+  /* line 95, src/assets/scss/layout/_nav.scss */
   .mobile-nav {
     display: block;
   }
 }
 
-/* line 115, src/assets/scss/layout/_nav.scss */
+/* line 110, src/assets/scss/layout/_nav.scss */
 .mobile-nav.is-open {
   -webkit-transform: translateY(0);
           transform: translateY(0);

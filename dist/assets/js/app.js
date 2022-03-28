@@ -51,17 +51,6 @@ $(function () {
     e.stopPropagation();
     toggleMenu();
   });
-  var closeBtn = document.querySelector('.close');
-
-  var closeMenu = function closeMenu() {
-    menu.classList.remove('is-open');
-    body.classList.remove('opened-menu');
-  };
-
-  closeBtn.addEventListener('click', function (e) {
-    e.stopPropagation();
-    closeMenu();
-  });
 }); // ancors
 
 $(function () {

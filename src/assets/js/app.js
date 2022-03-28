@@ -50,16 +50,6 @@ $(() => {
     toggleMenu();
   });
 
-  const closeBtn = document.querySelector('.close');
-  const closeMenu = function () {
-    menu.classList.remove('is-open');
-    body.classList.remove('opened-menu');
-  };
-
-  closeBtn.addEventListener('click', function (e) {
-    e.stopPropagation();
-    closeMenu();
-  });
 });
 
 // ancors
