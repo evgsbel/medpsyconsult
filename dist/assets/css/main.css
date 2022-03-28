@@ -14489,7 +14489,14 @@ body.opened-menu {
   }
 }
 
-/* line 28, src/assets/scss/base/_base.scss */
+@media only screen and (max-width: 488px) {
+  /* line 29, src/assets/scss/base/_base.scss */
+  .iphone .hero {
+    padding-top: 80px;
+  }
+}
+
+/* line 34, src/assets/scss/base/_base.scss */
 .container {
   padding: 0 30px;
 }
@@ -14500,7 +14507,7 @@ body.opened-menu {
  * making all elements inheriting from the root box-sizing value
  * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
  */
-/* line 51, src/assets/scss/base/_base.scss */
+/* line 57, src/assets/scss/base/_base.scss */
 *,
 *::before,
 *::after {
@@ -14508,24 +14515,24 @@ body.opened-menu {
           box-sizing: inherit;
 }
 
-/* line 57, src/assets/scss/base/_base.scss */
+/* line 63, src/assets/scss/base/_base.scss */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 60, src/assets/scss/base/_base.scss */
+/* line 66, src/assets/scss/base/_base.scss */
 a:hover {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 66, src/assets/scss/base/_base.scss */
+/* line 72, src/assets/scss/base/_base.scss */
 img {
   max-width: 100%;
 }
 
-/* line 70, src/assets/scss/base/_base.scss */
+/* line 76, src/assets/scss/base/_base.scss */
 .btn-reset {
   border: none;
   background-color: transparent;
@@ -14533,28 +14540,28 @@ img {
   padding: 0;
 }
 
-/* line 77, src/assets/scss/base/_base.scss */
+/* line 83, src/assets/scss/base/_base.scss */
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-/* line 79, src/assets/scss/base/_base.scss */
+/* line 85, src/assets/scss/base/_base.scss */
 .flex_h-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-/* line 82, src/assets/scss/base/_base.scss */
+/* line 88, src/assets/scss/base/_base.scss */
 .flex_w-center {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-/* line 85, src/assets/scss/base/_base.scss */
+/* line 91, src/assets/scss/base/_base.scss */
 .flex_all-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -14564,7 +14571,7 @@ img {
           justify-content: center;
 }
 
-/* line 89, src/assets/scss/base/_base.scss */
+/* line 95, src/assets/scss/base/_base.scss */
 .flex_all-sb {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -14574,29 +14581,29 @@ img {
           justify-content: space-between;
 }
 
-/* line 95, src/assets/scss/base/_base.scss */
+/* line 101, src/assets/scss/base/_base.scss */
 .reference {
   font-family: 'SourceSansPro', sans-serif;
   font-size: 13px;
   text-transform: uppercase;
 }
 
-/* line 99, src/assets/scss/base/_base.scss */
+/* line 105, src/assets/scss/base/_base.scss */
 .reference_white {
   color: #fff;
 }
 
-/* line 102, src/assets/scss/base/_base.scss */
+/* line 108, src/assets/scss/base/_base.scss */
 .reference_grey {
   color: rgba(35, 57, 69, 0.6);
 }
 
-/* line 107, src/assets/scss/base/_base.scss */
+/* line 113, src/assets/scss/base/_base.scss */
 .with-red-line {
   position: relative;
 }
 
-/* line 109, src/assets/scss/base/_base.scss */
+/* line 115, src/assets/scss/base/_base.scss */
 .with-red-line::before {
   content: '';
   position: absolute;
