@@ -24,13 +24,6 @@ body {
     padding-top: 0 !important;
   }
 }
-.iphone {
-  @include r(488) {
-    .hero {
-      padding-top: 80px;
-    }
-  }
-}
 .container {
   padding: 0 30px;
   //  @include r(768) {

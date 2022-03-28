@@ -2,6 +2,9 @@
   height: 100vh;
   background-image: url('../img/hero-bg.jpg');
   background-size: cover;
+  @include r(480) {
+    padding: 100px 0;
+  }
   &__wrapper {
     display: flex;
     flex-direction: column;
