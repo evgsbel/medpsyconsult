@@ -25,11 +25,16 @@
     line-height: 65px;
     text-transform: uppercase;
     text-align: right;
+    transition: opacity .3s ease-in-out;
     @include r(1280) {
       font-size: 25px;
     }
     @include r(576) {
       font-size: 20px;
+    }
+    @include r(480) {
+      opacity: 0;
+      z-index: -1;
     }
   }
 }

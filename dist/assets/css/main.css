@@ -14500,7 +14500,7 @@ body.opened-menu {
  * making all elements inheriting from the root box-sizing value
  * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
  */
-/* line 52, src/assets/scss/base/_base.scss */
+/* line 51, src/assets/scss/base/_base.scss */
 *,
 *::before,
 *::after {
@@ -14508,24 +14508,24 @@ body.opened-menu {
           box-sizing: inherit;
 }
 
-/* line 58, src/assets/scss/base/_base.scss */
+/* line 57, src/assets/scss/base/_base.scss */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 61, src/assets/scss/base/_base.scss */
+/* line 60, src/assets/scss/base/_base.scss */
 a:hover {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 67, src/assets/scss/base/_base.scss */
+/* line 66, src/assets/scss/base/_base.scss */
 img {
   max-width: 100%;
 }
 
-/* line 71, src/assets/scss/base/_base.scss */
+/* line 70, src/assets/scss/base/_base.scss */
 .btn-reset {
   border: none;
   background-color: transparent;
@@ -14533,28 +14533,28 @@ img {
   padding: 0;
 }
 
-/* line 78, src/assets/scss/base/_base.scss */
+/* line 77, src/assets/scss/base/_base.scss */
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-/* line 80, src/assets/scss/base/_base.scss */
+/* line 79, src/assets/scss/base/_base.scss */
 .flex_h-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-/* line 83, src/assets/scss/base/_base.scss */
+/* line 82, src/assets/scss/base/_base.scss */
 .flex_w-center {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-/* line 86, src/assets/scss/base/_base.scss */
+/* line 85, src/assets/scss/base/_base.scss */
 .flex_all-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -14564,7 +14564,7 @@ img {
           justify-content: center;
 }
 
-/* line 90, src/assets/scss/base/_base.scss */
+/* line 89, src/assets/scss/base/_base.scss */
 .flex_all-sb {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -14574,29 +14574,29 @@ img {
           justify-content: space-between;
 }
 
-/* line 96, src/assets/scss/base/_base.scss */
+/* line 95, src/assets/scss/base/_base.scss */
 .reference {
   font-family: 'SourceSansPro', sans-serif;
   font-size: 13px;
   text-transform: uppercase;
 }
 
-/* line 100, src/assets/scss/base/_base.scss */
+/* line 99, src/assets/scss/base/_base.scss */
 .reference_white {
   color: #fff;
 }
 
-/* line 103, src/assets/scss/base/_base.scss */
+/* line 102, src/assets/scss/base/_base.scss */
 .reference_grey {
   color: rgba(35, 57, 69, 0.6);
 }
 
-/* line 108, src/assets/scss/base/_base.scss */
+/* line 107, src/assets/scss/base/_base.scss */
 .with-red-line {
   position: relative;
 }
 
-/* line 110, src/assets/scss/base/_base.scss */
+/* line 109, src/assets/scss/base/_base.scss */
 .with-red-line::before {
   content: '';
   position: absolute;
@@ -14918,6 +14918,8 @@ ul {
   line-height: 65px;
   text-transform: uppercase;
   text-align: right;
+  -webkit-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -14934,7 +14936,15 @@ ul {
   }
 }
 
-/* line 37, src/assets/scss/layout/_header.scss */
+@media only screen and (max-width: 480px) {
+  /* line 18, src/assets/scss/layout/_header.scss */
+  .header__phone {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+/* line 42, src/assets/scss/layout/_header.scss */
 .logo {
   position: relative;
   z-index: 150;
@@ -14947,7 +14957,7 @@ ul {
   gap: 10px;
 }
 
-/* line 44, src/assets/scss/layout/_header.scss */
+/* line 49, src/assets/scss/layout/_header.scss */
 .logo__image {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
@@ -14956,7 +14966,7 @@ ul {
   height: 55px;
 }
 
-/* line 49, src/assets/scss/layout/_header.scss */
+/* line 54, src/assets/scss/layout/_header.scss */
 .logo__caption {
   font-family: 'Manrope', sans-serif;
   font-weight: 800;
@@ -14966,14 +14976,14 @@ ul {
 }
 
 @media only screen and (max-width: 1280px) {
-  /* line 49, src/assets/scss/layout/_header.scss */
+  /* line 54, src/assets/scss/layout/_header.scss */
   .logo__caption {
     font-size: 26px;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  /* line 49, src/assets/scss/layout/_header.scss */
+  /* line 54, src/assets/scss/layout/_header.scss */
   .logo__caption {
     font-size: 20px;
   }
@@ -15027,12 +15037,20 @@ ul {
   }
 }
 
-/* line 21, src/assets/scss/layout/_nav.scss */
+@media only screen and (max-width: 480px) {
+  /* line 9, src/assets/scss/layout/_nav.scss */
+  .nav__list {
+    height: 70vh;
+    gap: 40px;
+  }
+}
+
+/* line 25, src/assets/scss/layout/_nav.scss */
 .nav__item {
   position: relative;
 }
 
-/* line 23, src/assets/scss/layout/_nav.scss */
+/* line 27, src/assets/scss/layout/_nav.scss */
 .nav__item::before {
   content: '';
   position: absolute;
@@ -15045,17 +15063,17 @@ ul {
   transition: .3s width ease-in-out;
 }
 
-/* line 33, src/assets/scss/layout/_nav.scss */
+/* line 37, src/assets/scss/layout/_nav.scss */
 .nav__item:first-child::before {
   width: 53%;
 }
 
-/* line 36, src/assets/scss/layout/_nav.scss */
+/* line 40, src/assets/scss/layout/_nav.scss */
 .nav__item:hover::before {
   width: 100%;
 }
 
-/* line 40, src/assets/scss/layout/_nav.scss */
+/* line 44, src/assets/scss/layout/_nav.scss */
 .nav__link {
   font-family: 'Manrope', sans-serif;
   font-weight: 800;
@@ -15063,20 +15081,20 @@ ul {
 }
 
 @media only screen and (max-width: 1280px) {
-  /* line 40, src/assets/scss/layout/_nav.scss */
+  /* line 44, src/assets/scss/layout/_nav.scss */
   .nav__link {
     font-size: 14px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  /* line 40, src/assets/scss/layout/_nav.scss */
+  /* line 44, src/assets/scss/layout/_nav.scss */
   .nav__link {
     font-size: 24px;
   }
 }
 
-/* line 53, src/assets/scss/layout/_nav.scss */
+/* line 57, src/assets/scss/layout/_nav.scss */
 .burger {
   z-index: 200;
   display: none;
@@ -15100,7 +15118,7 @@ ul {
 }
 
 @media only screen and (max-width: 1024px) {
-  /* line 53, src/assets/scss/layout/_nav.scss */
+  /* line 57, src/assets/scss/layout/_nav.scss */
   .burger {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -15108,7 +15126,7 @@ ul {
   }
 }
 
-/* line 71, src/assets/scss/layout/_nav.scss */
+/* line 75, src/assets/scss/layout/_nav.scss */
 .burger span {
   height: 3px;
   width: 100%;
@@ -15120,31 +15138,30 @@ ul {
   transition: opacity 0.3s cubic-bezier(0, 0.55, 0.45, 1), transform 0.5s cubic-bezier(0, 0.55, 0.45, 1), -webkit-transform 0.5s cubic-bezier(0, 0.55, 0.45, 1);
 }
 
-/* line 80, src/assets/scss/layout/_nav.scss */
+/* line 84, src/assets/scss/layout/_nav.scss */
 .burger.is-active span:first-child {
   opacity: 0;
 }
 
-/* line 84, src/assets/scss/layout/_nav.scss */
+/* line 88, src/assets/scss/layout/_nav.scss */
 .burger.is-active span:nth-child(2) {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-/* line 88, src/assets/scss/layout/_nav.scss */
+/* line 92, src/assets/scss/layout/_nav.scss */
 .burger.is-active span:last-child {
   -webkit-transform: rotate(-45deg) translate(6px, -6px);
           transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* line 95, src/assets/scss/layout/_nav.scss */
+/* line 99, src/assets/scss/layout/_nav.scss */
 .mobile-nav {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
   display: none;
-  padding: 50px;
   background-color: #0C3165;
   width: 100%;
   height: 100vh;
@@ -15157,16 +15174,32 @@ ul {
 }
 
 @media only screen and (max-width: 1024px) {
-  /* line 95, src/assets/scss/layout/_nav.scss */
+  /* line 99, src/assets/scss/layout/_nav.scss */
   .mobile-nav {
     display: block;
   }
 }
 
-/* line 110, src/assets/scss/layout/_nav.scss */
+/* line 113, src/assets/scss/layout/_nav.scss */
 .mobile-nav.is-open {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+/* line 116, src/assets/scss/layout/_nav.scss */
+.mobile-nav__phone {
+  display: none;
+  z-index: 150;
+  margin: 100px auto 0;
+  text-align: center;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 116, src/assets/scss/layout/_nav.scss */
+  .mobile-nav__phone {
+    display: block;
+  }
 }
 
 /* line 1, src/assets/scss/layout/_footer.scss */

@@ -27,20 +27,19 @@ body {
 
 .container {
   padding: 0 30px;
-//  @include r(768) {
-//    padding: 0 32px;
-//  }
-//  @include r(480) {
-//    padding: 0 12px;
-//  }
-//}
-//.row {
-//  @include r(480) {
-//    margin-left: -12px;
-//    margin-right: -12px;
-//  }
+  //  @include r(768) {
+  //    padding: 0 32px;
+  //  }
+  //  @include r(480) {
+  //    padding: 0 12px;
+  //  }
+  //}
+  //.row {
+  //  @include r(480) {
+  //    margin-left: -12px;
+  //    margin-right: -12px;
+  //  }
 }
-
 
 
 /**
@@ -83,7 +82,7 @@ img {
   &_w-center {
     justify-content: center;
   }
-  &_all-center{
+  &_all-center {
     align-items: center;
     justify-content: center;
   }
