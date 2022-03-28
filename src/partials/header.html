@@ -1,0 +1,28 @@
+<header class="header">
+  <div class="container">
+    <div class="row header__wrapper">
+      <div class="col-12 col-sm-4 col-md-3">
+        <a href="" class="logo header__logo">
+          <svg class="logo__image">
+            <use xlink:href="assets/img/sprite.svg#logo"></use>
+          </svg>
+          <p class="logo__caption">MedPsyConsult</p>
+        </a>
+      </div>
+      <div class="col-lg-6 d-none d-lg-block">
+          {{> nav}}
+      </div>
+      <div class="col">
+          <a href="tel:+79855515935" class="header__phone">+7 (985) 551-59-35</a>
+      </div>
+      <button class="btn-reset burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="mobile-nav">
+      {{> nav}}
+    </div>
+  </div>
+</header>

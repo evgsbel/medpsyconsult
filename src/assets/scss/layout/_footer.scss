@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  align-items: center;
+  height: 130px;
+  color: #fff;
+  background-color: #0C3165;
+  @include r(1024) {
+    .logo,
+    .header__phone {
+      z-index: 10;
+    }
+  }
+}
